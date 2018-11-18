@@ -45,7 +45,7 @@ res = sa.exec_command('simple_args_example', cmd, sys.argv)
 
 Example Help:
 ```
-$ python ./simple_args_example.py help
+$ python ./simple_args_example.py ?
  Usage:
     simple_args_example <Command>      : Management App
  
@@ -62,7 +62,7 @@ $ python ./simple_args_example.py help
 ```
 
 ```
-$ python ./simple_args_example.py daemon help
+$ python ./simple_args_example.py daemon ?
  Usage:
     simple_args_example daemon <Command> : Daemon manager
  
@@ -70,4 +70,16 @@ $ python ./simple_args_example.py daemon help
     start                                : Starts Daemon
     stop  [Options]                      : Stops Daemon
           --force (-f)                   : force shutdown (optional)
+```
+
+```
+$ python ./simple_args_example.py service halt ?
+Usage:
+   Manager service halt <Arguments> [Options] : Stops Service and halts it
+
+Arguments:
+    <service>                                 : name of service
+
+Options:
+    --wait=<seconds> (-w)                     : time to wait for service to be shutdown (default: 0)
 ```
