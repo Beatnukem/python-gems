@@ -47,7 +47,7 @@ Example Help:
 ```
 $ python ./simple_args_example.py ?
  Usage:
-    simple_args_example <Command>      : Management App
+    simple_args_example <Command>      : Example App
  
  Commands:
     daemon  <Command>                  : Daemon manager
@@ -75,11 +75,11 @@ $ python ./simple_args_example.py daemon ?
 ```
 $ python ./simple_args_example.py service halt ?
 Usage:
-   Manager service halt <Arguments> [Options] : Stops Service and halts it
+   simple_args_example service halt <Arguments> [Options] : Stops Service and halts it
 
 Arguments:
-    <service>                                 : name of service
+    <service>                                             : name of service
 
 Options:
-    --wait=<seconds> (-w)                     : time to wait for service to be shutdown (default: 0)
+    --wait=<seconds> (-w)                                 : time to wait for service to be shutdown (default: 0)
 ```
