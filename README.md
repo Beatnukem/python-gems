@@ -40,14 +40,14 @@ cmds['service'] = sa.Cmd(cmds=cmds_service, desc='Daemon service manager')
 
 cmd = sa.Cmd(cmds=cmds, desc='Management App')
 
-res = sa.exec_command('simple_args_example.py', cmd, sys.argv)
+res = sa.exec_command('simple_args_example', cmd, sys.argv)
 ```
 
 Example Help:
 ```
 $ python ./simple_args_example.py help
  Usage:
-    simple_args_example.py <Command>   : Management App
+    simple_args_example <Command>   : Management App
  
  Commands:
     daemon  <Command>                  : Daemon manager
@@ -64,10 +64,10 @@ $ python ./simple_args_example.py help
 ```
 $ python ./simple_args_example.py daemon help
  Usage:
-    simple_args_example.py daemon <Command> : Daemon manager
+    simple_args_example daemon <Command> : Daemon manager
  
  Commands:
-    start                                   : Starts Daemon
-    stop  [Options]                         : Stops Daemon
-          --force (-f)                      : force shutdown (optional)
+    start                                : Starts Daemon
+    stop  [Options]                      : Stops Daemon
+          --force (-f)                   : force shutdown (optional)
 ```
