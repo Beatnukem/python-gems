@@ -179,7 +179,7 @@ def _collect_help(cmd, commands, pre_len, post_len, lines, n):
                 else:
                     arg_text = '--{}{}'.format(arg.name, '=<{}>'.format(arg.exmpl if arg.exmpl else 'foo') if arg.flags & VALUE else '')
 
-                if arg.default:
+                if arg.default is not None:
                     arg_desc = '{} (default: {})'.format(arg.desc, arg.default)
                 elif arg.flags & REQUIRED:
                     arg_desc = arg.desc
