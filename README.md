@@ -47,7 +47,7 @@ Example Help:
 ```
 $ python ./simple_args_example.py help
  Usage:
-    simple_args_example <Command>   : Management App
+    simple_args_example <Command>      : Management App
  
  Commands:
     daemon  <Command>                  : Daemon manager
