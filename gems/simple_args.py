@@ -246,7 +246,6 @@ def _collect_help(cmd, commands, pre_len, post_len, lines, n):
         n = _add_line(lines, '', None, n)
         n = _add_line(lines, 'Arguments:', None, n)
 
-    unamed_args = sorted(unamed_args, key=lambda x: x.name)
     for arg in unamed_args:
         n = _add_line(lines, '{}{}{}{}'.format(
             prefix,
